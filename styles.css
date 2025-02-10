@@ -1,17 +1,11 @@
 /* Kyle Marlia-Conner */
-/* 02/02/2025 */
-/* Assignment 6.3 */
+/* 02/09/2025 */
+/* Assignment 7.2 */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
 }
 
 body {
@@ -45,6 +39,12 @@ header h1 {
     flex-grow: 1;
 }
 
+.logo {
+    position: absolute;
+    left: 20px;
+    height: 50px;
+}
+
 nav {
     position: fixed;
     left: 0;
@@ -73,6 +73,22 @@ nav ul li a {
     padding: 10px;
 }
 
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+main {
+    flex: 1;
+    max-width: 60%;
+    padding: 20px;
+}
+
 .quote-section {
     display: flex;
     align-items: center;
@@ -95,16 +111,49 @@ nav ul li a {
     max-width: 500px;
 }
 
+.side-images {
+    flex-shrink: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+  
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: #1F3A93;
     color: white;
 }
-
-.logo {
-    position: absolute;
-    left: 20px;
-    height: 50px;
-}
-
